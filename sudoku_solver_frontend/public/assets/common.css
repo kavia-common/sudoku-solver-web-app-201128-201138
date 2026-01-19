@@ -1,0 +1,260 @@
+:root{
+  /* Colors */
+  --color-fe6f69:#fe6f69;
+  --color-ffffff:#ffffff;
+  --color-dd3128:#dd3128;
+  --color-e53166:#e53166;
+  --color-eb398c:#eb398c;
+  --color-e23888:#e23888;
+  --color-ffd70f:#ffd70f;
+  --color-fcc51e:#fcc51e;
+  --color-000000:#000000;
+  --color-d9d9d9:#d9d9d9;
+  --color-e54841:#e54841;
+  --color-db312d:#db312d;
+  --color-e43264:#e43264;
+  --color-e53265:#e53265;
+  --color-e53264:#e53264;
+  --color-f9c320:#f9c320;
+  --color-f5c021:#f5c021;
+  --color-e44841:#e44841;
+
+  /* Typography */
+  --typo-0-family:"Alegreya Sans";
+  --typo-0-size:28px; --typo-0-weight:800; --typo-0-line-height:23.536232px; --typo-0-letter-spacing:0px; --typo-0-text-align:left;
+
+  --typo-1-family:"Alegreya Sans";
+  --typo-1-size:28px; --typo-1-weight:900; --typo-1-line-height:33.6px; --typo-1-letter-spacing:0px; --typo-1-text-align:left;
+
+  --typo-2-family:"Alegreya Sans";
+  --typo-2-size:28px; --typo-2-weight:800; --typo-2-line-height:33.6px; --typo-2-letter-spacing:0px; --typo-2-text-align:left;
+
+  --typo-3-family:"Alegreya Sans";
+  --typo-3-size:20px; --typo-3-weight:800; --typo-3-line-height:24px; --typo-3-letter-spacing:0px; --typo-3-text-align:left;
+
+  --typo-4-family:"Alegreya Sans";
+  --typo-4-size:88px; --typo-4-weight:700; --typo-4-line-height:105.6px; --typo-4-letter-spacing:0px; --typo-4-text-align:left;
+
+  --typo-5-family:"Alegreya Sans";
+  --typo-5-size:138px; --typo-5-weight:900; --typo-5-line-height:165.6px; --typo-5-letter-spacing:0px; --typo-5-text-align:left;
+
+  --typo-6-family:"Alegreya Sans";
+  --typo-6-size:34px; --typo-6-weight:700; --typo-6-line-height:40.8px; --typo-6-letter-spacing:0px; --typo-6-text-align:left;
+
+  --typo-7-family:"Alegreya Sans";
+  --typo-7-size:38px; --typo-7-weight:900; --typo-7-line-height:31.942028px; --typo-7-letter-spacing:0px; --typo-7-text-align:left;
+
+  --typo-8-family:"Alegreya Sans";
+  --typo-8-size:28px; --typo-8-weight:800; --typo-8-line-height:23.536232px; --typo-8-letter-spacing:0.84px; --typo-8-text-align:left;
+
+  --typo-9-family:"Alegreya Sans";
+  --typo-9-size:138px; --typo-9-weight:900; --typo-9-line-height:129px; --typo-9-letter-spacing:0px; --typo-9-text-align:left;
+
+  --typo-10-family:"Alegreya Sans";
+  --typo-10-size:38px; --typo-10-weight:900; --typo-10-line-height:35.52174px; --typo-10-letter-spacing:0px; --typo-10-text-align:left;
+
+  --typo-11-family:"Alegreya Sans";
+  --typo-11-size:28px; --typo-11-weight:700; --typo-11-line-height:32.2px; --typo-11-letter-spacing:0px; --typo-11-text-align:left;
+
+  --typo-12-family:"Alegreya Sans";
+  --typo-12-size:38px; --typo-12-weight:800; --typo-12-line-height:35.52174px; --typo-12-letter-spacing:0px; --typo-12-text-align:left;
+
+  --typo-13-family:"Alegreya Sans";
+  --typo-13-size:28px; --typo-13-weight:800; --typo-13-line-height:32.2px; --typo-13-letter-spacing:0px; --typo-13-text-align:left;
+
+  --typo-14-family:"Alegreya Sans";
+  --typo-14-size:120px; --typo-14-weight:900; --typo-14-line-height:112.173912px; --typo-14-letter-spacing:0px; --typo-14-text-align:left;
+
+  --typo-15-family:"Alegreya Sans";
+  --typo-15-size:150px; --typo-15-weight:900; --typo-15-line-height:140.217392px; --typo-15-letter-spacing:0px; --typo-15-text-align:left;
+
+  --typo-16-family:"Alegreya Sans";
+  --typo-16-size:58px; --typo-16-weight:900; --typo-16-line-height:54.217392px; --typo-16-letter-spacing:0px; --typo-16-text-align:left;
+
+  --typo-17-family:"Alegreya Sans";
+  --typo-17-size:48px; --typo-17-weight:900; --typo-17-line-height:44.869568px; --typo-17-letter-spacing:0px; --typo-17-text-align:left;
+
+  --typo-18-family:"Alegreya Sans";
+  --typo-18-size:48px; --typo-18-weight:800; --typo-18-line-height:44.869568px; --typo-18-letter-spacing:0px; --typo-18-text-align:left;
+
+  --typo-19-family:"Alegreya Sans";
+  --typo-19-size:28px; --typo-19-weight:700; --typo-19-line-height:26.173914px; --typo-19-letter-spacing:0px; --typo-19-text-align:left;
+
+  --typo-20-family:"Alegreya Sans";
+  --typo-20-size:28px; --typo-20-weight:500; --typo-20-line-height:23.536232px; --typo-20-letter-spacing:0.84px; --typo-20-text-align:left;
+
+  --typo-21-family:"Alegreya Sans";
+  --typo-21-size:24px; --typo-21-weight:700; --typo-21-line-height:26.88px; --typo-21-letter-spacing:0.72px; --typo-21-text-align:left;
+
+  --typo-22-family:"Alegreya Sans";
+  --typo-22-size:28px; --typo-22-weight:800; --typo-22-line-height:31.36px; --typo-22-letter-spacing:0.84px; --typo-22-text-align:left;
+
+  --typo-23-family:"Alegreya Sans";
+  --typo-23-size:18px; --typo-23-weight:800; --typo-23-line-height:20.16px; --typo-23-letter-spacing:0.54px; --typo-23-text-align:left;
+
+  --typo-24-family:"Alegreya Sans";
+  --typo-24-size:28px; --typo-24-weight:900; --typo-24-line-height:33.6px; --typo-24-letter-spacing:0px; --typo-24-text-align:center;
+
+  --typo-25-family:"Alegreya Sans";
+  --typo-25-size:38px; --typo-25-weight:800; --typo-25-line-height:35.52174px; --typo-25-letter-spacing:0px; --typo-25-text-align:center;
+
+  --typo-26-family:"Alegreya Sans";
+  --typo-26-size:27px; --typo-26-weight:700; --typo-26-line-height:25.23913px; --typo-26-letter-spacing:0px; --typo-26-text-align:left;
+
+  --typo-27-family:"Alegreya Sans";
+  --typo-27-size:28px; --typo-27-weight:800; --typo-27-line-height:23.536232px; --typo-27-letter-spacing:0px; --typo-27-text-align:left; --typo-27-color:var(--color-ffffff);
+
+  --typo-28-family:"Alegreya Sans";
+  --typo-28-size:28px; --typo-28-weight:900; --typo-28-line-height:33.6px; --typo-28-letter-spacing:0px; --typo-28-text-align:left; --typo-28-color:var(--color-ffffff);
+
+  --typo-29-family:"Alegreya Sans";
+  --typo-29-size:28px; --typo-29-weight:800; --typo-29-line-height:33.6px; --typo-29-letter-spacing:0px; --typo-29-text-align:left; --typo-29-color:var(--color-ffffff);
+
+  --typo-30-family:"Alegreya Sans";
+  --typo-30-size:20px; --typo-30-weight:800; --typo-30-line-height:24px; --typo-30-letter-spacing:0px; --typo-30-text-align:left; --typo-30-color:var(--color-ffffff);
+
+  --typo-31-family:"Alegreya Sans";
+  --typo-31-size:88px; --typo-31-weight:700; --typo-31-line-height:105.6px; --typo-31-letter-spacing:0px; --typo-31-text-align:left; --typo-31-color:var(--color-ffffff);
+
+  --typo-32-family:"Alegreya Sans";
+  --typo-32-size:138px; --typo-32-weight:900; --typo-32-line-height:165.6px; --typo-32-letter-spacing:0px; --typo-32-text-align:left; --typo-32-color:var(--color-ffffff);
+
+  --typo-33-family:"Alegreya Sans";
+  --typo-33-size:34px; --typo-33-weight:700; --typo-33-line-height:40.8px; --typo-33-letter-spacing:0px; --typo-33-text-align:left; --typo-33-color:var(--color-ffffff);
+
+  --typo-34-family:"Alegreya Sans";
+  --typo-34-size:38px; --typo-34-weight:900; --typo-34-line-height:31.942028px; --typo-34-letter-spacing:0px; --typo-34-text-align:left; --typo-34-color:var(--color-ffffff);
+
+  --typo-35-family:"Alegreya Sans";
+  --typo-35-size:28px; --typo-35-weight:800; --typo-35-line-height:23.536232px; --typo-35-letter-spacing:0.84px; --typo-35-text-align:left; --typo-35-color:var(--color-ffffff);
+
+  --typo-36-family:"Alegreya Sans";
+  --typo-36-size:138px; --typo-36-weight:900; --typo-36-line-height:129px; --typo-36-letter-spacing:0px; --typo-36-text-align:left; --typo-36-color:var(--color-ffffff);
+
+  --typo-37-family:"Alegreya Sans";
+  --typo-37-size:38px; --typo-37-weight:900; --typo-37-line-height:35.52174px; --typo-37-letter-spacing:0px; --typo-37-text-align:left; --typo-37-color:var(--color-ffffff);
+
+  --typo-38-family:"Alegreya Sans";
+  --typo-38-size:28px; --typo-38-weight:700; --typo-38-line-height:32.2px; --typo-38-letter-spacing:0px; --typo-38-text-align:left; --typo-38-color:var(--color-ffffff);
+
+  --typo-39-family:"Alegreya Sans";
+  --typo-39-size:38px; --typo-39-weight:800; --typo-39-line-height:35.52174px; --typo-39-letter-spacing:0px; --typo-39-text-align:left; --typo-39-color:var(--color-ffffff);
+
+  --typo-40-family:"Alegreya Sans";
+  --typo-40-size:28px; --typo-40-weight:800; --typo-40-line-height:32.2px; --typo-40-letter-spacing:0px; --typo-40-text-align:left; --typo-40-color:var(--color-ffffff);
+
+  --typo-41-family:"Alegreya Sans";
+  --typo-41-size:120px; --typo-41-weight:900; --typo-41-line-height:112.173912px; --typo-41-letter-spacing:0px; --typo-41-text-align:left; --typo-41-color:var(--color-ffffff);
+
+  --typo-42-family:"Alegreya Sans";
+  --typo-42-size:150px; --typo-42-weight:900; --typo-42-line-height:140.217392px; --typo-42-letter-spacing:0px; --typo-42-text-align:left; --typo-42-color:var(--color-ffffff);
+
+  --typo-43-family:"Alegreya Sans";
+  --typo-43-size:58px; --typo-43-weight:900; --typo-43-line-height:54.217392px; --typo-43-letter-spacing:0px; --typo-43-text-align:left; --typo-43-color:var(--color-ffffff);
+
+  --typo-44-family:"Alegreya Sans";
+  --typo-44-size:48px; --typo-44-weight:900; --typo-44-line-height:44.869568px; --typo-44-letter-spacing:0px; --typo-44-text-align:left; --typo-44-color:var(--color-ffffff);
+
+  --typo-45-family:"Alegreya Sans";
+  --typo-45-size:48px; --typo-45-weight:800; --typo-45-line-height:44.869568px; --typo-45-letter-spacing:0px; --typo-45-text-align:left; --typo-45-color:var(--color-000000);
+
+  --typo-46-family:"Alegreya Sans";
+  --typo-46-size:38px; --typo-46-weight:800; --typo-46-line-height:35.52174px; --typo-46-letter-spacing:0px; --typo-46-text-align:left; --typo-46-color:var(--color-000000);
+
+  --typo-47-family:"Alegreya Sans";
+  --typo-47-size:38px; --typo-47-weight:900; --typo-47-line-height:35.52174px; --typo-47-letter-spacing:0px; --typo-47-text-align:left; --typo-47-color:var(--color-fe6f69);
+
+  --typo-48-family:"Alegreya Sans";
+  --typo-48-size:28px; --typo-48-weight:700; --typo-48-line-height:26.173914px; --typo-48-letter-spacing:0px; --typo-48-text-align:left; --typo-48-color:var(--color-ffffff);
+
+  --typo-49-family:"Alegreya Sans";
+  --typo-49-size:28px; --typo-49-weight:500; --typo-49-line-height:23.536232px; --typo-49-letter-spacing:0.84px; --typo-49-text-align:left; --typo-49-color:var(--color-ffffff);
+
+  --typo-50-family:"Alegreya Sans";
+  --typo-50-size:24px; --typo-50-weight:700; --typo-50-line-height:26.88px; --typo-50-letter-spacing:0.72px; --typo-50-text-align:left; --typo-50-color:var(--color-ffffff);
+
+  --typo-51-family:"Alegreya Sans";
+  --typo-51-size:28px; --typo-51-weight:800; --typo-51-line-height:31.36px; --typo-51-letter-spacing:0.84px; --typo-51-text-align:left; --typo-51-color:var(--color-ffffff);
+
+  --typo-52-family:"Alegreya Sans";
+  --typo-52-size:18px; --typo-52-weight:800; --typo-52-line-height:20.16px; --typo-52-letter-spacing:0.54px; --typo-52-text-align:left; --typo-52-color:var(--color-ffffff);
+
+  --typo-53-family:"Alegreya Sans";
+  --typo-53-size:28px; --typo-53-weight:900; --typo-53-line-height:33.6px; --typo-53-letter-spacing:0px; --typo-53-text-align:center; --typo-53-color:var(--color-ffffff);
+
+  --typo-54-family:"Alegreya Sans";
+  --typo-54-size:38px; --typo-54-weight:800; --typo-54-line-height:35.52174px; --typo-54-letter-spacing:0px; --typo-54-text-align:center; --typo-54-color:var(--color-ffffff);
+
+  --typo-55-family:"Alegreya Sans";
+  --typo-55-size:27px; --typo-55-weight:700; --typo-55-line-height:25.23913px; --typo-55-letter-spacing:0px; --typo-55-text-align:left; --typo-55-color:var(--color-ffffff);
+
+  --typo-56-family:"Alegreya Sans";
+  --typo-56-size:18px; --typo-56-weight:800; --typo-56-line-height:20.16px; --typo-56-letter-spacing:0.54px; --typo-56-text-align:left; --typo-56-color:var(--color-000000);
+
+  /* Shadow tokens */
+  --shadow-0: 0px 1.6344585px 3.4283764px 0px rgba(0,0,0,1);
+  --shadow-1: 0px 22px 45.1px -18px rgba(0,0,0,1);
+  --shadow-2: 0px 15px 45.8px -14px rgba(0,0,0,1);
+  --shadow-3: 0px 2.7672565px 2.2138052px 0px rgba(0,0,0,1);
+  --shadow-4: 0px 6.650102px 5.3200817px 0px rgba(0,0,0,1);
+  --shadow-5: 0px 12.521552px 10.0172415px 0px rgba(0,0,0,1);
+  --shadow-6: 0px 22.33631px 17.869047px 0px rgba(0,0,0,1);
+  --shadow-7: 0px 41.77761px 33.42209px 0px rgba(0,0,0,1);
+  --shadow-8: 0px 100px 80px 0px rgba(0,0,0,1);
+  --shadow-9: 0px 36px 66.9px -35px rgba(155,0,72,1);
+  --shadow-10: 0px 14px 84px -45px rgba(139,0,66,1);
+  --shadow-11: 0px 36px 45.9px -20px rgba(172,130,0,1);
+  --shadow-12: 0px 2.7672565px 13.836283px 0px rgba(0,0,0,1);
+  --shadow-13: 0px 6.650102px 33.25051px 0px rgba(0,0,0,1);
+  --shadow-14: 0px 12.521552px 62.607758px 0px rgba(0,0,0,1);
+  --shadow-15: 0px 22.33631px 111.68154px 0px rgba(0,0,0,1);
+  --shadow-16: 0px 41.77761px 208.88805px 0px rgba(0,0,0,1);
+  --shadow-17: 0px 100px 500px 0px rgba(0,0,0,1);
+  --shadow-18: 0px 47px 89.8px -47px rgba(0,0,0,1);
+  --shadow-19: 0px 4px 4px 0px rgba(0,0,0,1);
+  --shadow-20: 0px 27px 28.2px -24px rgba(0,0,0,1);
+  --shadow-21: 0px 24px 33.2px -14px rgba(0,0,0,1);
+  --shadow-22: 0px 28px 30.7px -22px rgba(0,0,0,1);
+  --shadow-23: 0px 46px 45.8px -40px rgba(0,0,0,1);
+
+  /* Spacing scale (derived from typical values found; keep standard names) */
+  --spacing-xs:4px;
+  --spacing-sm:8px;
+  --spacing-md:16px;
+  --spacing-lg:24px;
+  --spacing-xl:32px;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: var(--typo-27-family), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--color-fe6f69);
+}
+
+img{ display:block; }
+
+.figma-screen{
+  position:relative;
+  width:1728px;
+  height:5149px;
+  overflow:hidden;
+  background: var(--color-fe6f69);
+}
+
+.figma-abs{ position:absolute; }
+
+.figma-text{
+  position:absolute;
+  white-space:pre-line;
+}
+
+.figma-btn{
+  cursor:pointer;
+  user-select:none;
+}
+
+.figma-input{
+  cursor:text;
+}
