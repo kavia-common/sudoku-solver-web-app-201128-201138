@@ -1,8 +1,115 @@
-/* Screen container */
+/* Screen container
+   NOTE: This CSS was initially generated for a fixed 1728px-wide artboard.
+   We keep the pixel-perfect positioning, but add a responsive "scale-to-fit"
+   wrapper behavior so the screen can be viewed on smaller devices.
+*/
 .screen-60-194 {
   width: 1728px;
   height: 1117px;
   background: var(--color-ffffff);
+
+  /* Allow centering when we scale down */
+  margin: 0 auto;
+}
+
+/* --- Responsive scaling layer ------------------------------------------------
+   We scale the entire artboard to fit the viewport width while preserving
+   internal absolute positioning. This is the safest way to make Figma-exported
+   "pixel layout" responsive without rewriting the DOM into flex/grid.
+*/
+:root {
+  --figma-screen-width: 1728;
+}
+
+/* Center and scale the whole screen in the viewport */
+body {
+  min-height: 100vh;
+}
+
+/* Use a transform scale based on viewport width. Cap at 1 to keep 1:1 at desktop. */
+.figma-screen.screen-60-194 {
+  transform-origin: top center;
+  transform: scale(min(1, calc(100vw / (var(--figma-screen-width) * 1px))));
+}
+
+/* Keep the screen from collapsing the layout when scaled (so body size matches) */
+.figma-screen.screen-60-194::after {
+  content: "";
+  display: block;
+  /* The layout height needs to follow the transform; approximate by scaling height */
+  height: calc(1117px * min(1, calc(100vw / (var(--figma-screen-width) * 1px))));
+}
+
+/* Add a bit of safe padding on very small widths */
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+}
+
+/* --- Basic interactivity -----------------------------------------------------
+   Add hover/focus-visible behavior to elements that look like controls in Figma.
+   We avoid changing layout and only use non-intrusive effects (opacity/transform).
+*/
+
+/* CTA "Order Now" - make the pink pill feel clickable */
+.node-60-255,
+.node-60-256,
+.node-60-257,
+.node-60-258,
+.node-60-259,
+.node-60-260,
+.node-60-261,
+.node-60-262 {
+  transition: transform 160ms ease, filter 160ms ease, opacity 160ms ease;
+}
+
+/* Group hover: when pointer is over the CTA area, lift subtly */
+.node-60-195:hover .node-60-255,
+.node-60-195:hover .node-60-256,
+.node-60-195:hover .node-60-257,
+.node-60-195:hover .node-60-258,
+.node-60-195:hover .node-60-259,
+.node-60-195:hover .node-60-260,
+.node-60-195:hover .node-60-261,
+.node-60-195:hover .node-60-262 {
+  /* no-op by default to avoid accidental full-screen hover; JS will add a class */
+}
+
+/* Navbar items should look interactive */
+.node-60-240,
+.node-60-241,
+.node-60-242,
+.node-60-245,
+.node-60-248,
+.node-60-249,
+.node-60-238 {
+  transition: transform 160ms ease, opacity 160ms ease, background-color 160ms ease, filter 160ms ease;
+}
+
+/* A subtle hover style; JS will add .is-hovered to exact targets */
+.is-hovered {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+/* Focus ring for keyboard navigation (JS sets tabindex + focus handlers) */
+.is-focusable:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 4px;
+  border-radius: 10px;
+}
+
+/* Slight visual affordance for icon buttons */
+.node-60-238.is-hovered,
+.node-60-248.is-hovered {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* CTA active state */
+.is-pressed {
+  transform: translateY(0px) scale(0.99);
+  opacity: 0.95;
 }
 
 /* Root */
