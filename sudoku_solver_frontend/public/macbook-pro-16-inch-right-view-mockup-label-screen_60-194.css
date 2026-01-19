@@ -1,6 +1,6 @@
 /* Screen container
-   NOTE: This CSS was initially generated for a fixed 1728px-wide artboard.
-   We keep the pixel-perfect positioning, but add a responsive "scale-to-fit"
+   NOTE: This CSS is generated for a fixed 1728px-wide artboard.
+   We keep pixel-perfect positioning, but add a responsive scale-to-fit
    wrapper behavior so the screen can be viewed on smaller devices.
 */
 .screen-60-194 {
@@ -12,11 +12,7 @@
   margin: 0 auto;
 }
 
-/* --- Responsive scaling layer ------------------------------------------------
-   We scale the entire artboard to fit the viewport width while preserving
-   internal absolute positioning. This is the safest way to make Figma-exported
-   "pixel layout" responsive without rewriting the DOM into flex/grid.
-*/
+/* --- Responsive scaling layer ------------------------------------------------ */
 :root {
   --figma-screen-width: 1728;
 }
@@ -36,7 +32,6 @@ body {
 .figma-screen.screen-60-194::after {
   content: "";
   display: block;
-  /* The layout height needs to follow the transform; approximate by scaling height */
   height: calc(1117px * min(1, calc(100vw / (var(--figma-screen-width) * 1px))));
 }
 
@@ -47,12 +42,7 @@ body {
   }
 }
 
-/* --- Basic interactivity -----------------------------------------------------
-   Add hover/focus-visible behavior to elements that look like controls in Figma.
-   We avoid changing layout and only use non-intrusive effects (opacity/transform).
-*/
-
-/* CTA "Order Now" - make the pink pill feel clickable */
+/* --- Basic interactivity ----------------------------------------------------- */
 .node-60-255,
 .node-60-256,
 .node-60-257,
@@ -64,18 +54,6 @@ body {
   transition: transform 160ms ease, filter 160ms ease, opacity 160ms ease;
 }
 
-/* Group hover: when pointer is over the CTA area, lift subtly */
-.node-60-195:hover .node-60-255,
-.node-60-195:hover .node-60-256,
-.node-60-195:hover .node-60-257,
-.node-60-195:hover .node-60-258,
-.node-60-195:hover .node-60-259,
-.node-60-195:hover .node-60-260,
-.node-60-195:hover .node-60-261,
-.node-60-195:hover .node-60-262 {
-  /* no-op by default to avoid accidental full-screen hover; JS will add a class */
-}
-
 /* Navbar items should look interactive */
 .node-60-240,
 .node-60-241,
@@ -83,17 +61,23 @@ body {
 .node-60-245,
 .node-60-248,
 .node-60-249,
-.node-60-238 {
+.node-60-238,
+.node-60-284,
+.node-60-280,
+.node-60-295,
+.node-60-300,
+.node-60-333,
+.node-60-375 {
   transition: transform 160ms ease, opacity 160ms ease, background-color 160ms ease, filter 160ms ease;
 }
 
-/* A subtle hover style; JS will add .is-hovered to exact targets */
+/* A subtle hover style; JS adds .is-hovered */
 .is-hovered {
   transform: translateY(-1px);
   filter: brightness(1.05);
 }
 
-/* Focus ring for keyboard navigation (JS sets tabindex + focus handlers) */
+/* Focus ring for keyboard navigation */
 .is-focusable:focus-visible {
   outline: 3px solid rgba(255, 255, 255, 0.9);
   outline-offset: 4px;
@@ -375,7 +359,7 @@ body {
 .node-60-263 { left: 1215px; top: 164px; width: 5px; height: 5px; background: var(--color-db312d); border-radius: 50%; }
 .node-60-266 { left: 1165px; top: 247px; width: 4px; height: 4px; background: var(--color-db312d); border-radius: 50%; }
 
-/* Below fold dots (keep for completeness) */
+/* Below fold dots (kept for completeness) */
 .node-60-264 { left: 429.23095703125px; top: 991px; width: 5.0000004371px; height: 5.0000004371px; background: var(--color-e53264); border-radius: 50%; }
 .node-60-267 { left: 486.23095703125px; top: 912px; width: 4.0000003497px; height: 4.0000003497px; background: var(--color-e53264); border-radius: 50%; }
 .node-60-265 { left: 701.99985024333px; top: 1876.283014148474px; width: 6.1237241328px; height: 6.1237241328px; background: var(--color-e53264); border-radius: 50%; }
@@ -393,35 +377,3 @@ body {
 .node-60-274 { left: 0px; top: 0px; width: 291px; height: 36px; font-family: var(--typo-39-family); font-size: var(--typo-39-size); font-weight: var(--typo-39-weight); line-height: var(--typo-39-line-height); color: var(--typo-39-color); }
 .node-60-275 { left: 0px; top: 47px; width: 260px; height: 3px; background: var(--color-ffffff); }
 .node-60-276 { left: 268px; top: 47px; width: 23px; height: 3px; background: var(--color-ffffff); }
-
-.node-60-277 { left: 857px; top: 1432px; width: 769px; height: 258px; font-family: var(--typo-36-family); font-size: 138px; font-weight: 900; line-height: 129px; color: var(--color-ffffff); white-space: pre-wrap; }
-.node-60-278 { left: 864px; top: 1698px; width: 690px; height: 96px; font-family: var(--typo-38-family); font-size: var(--typo-38-size); font-weight: var(--typo-38-weight); line-height: var(--typo-38-line-height); color: var(--typo-38-color); }
-
-.node-60-279 { left: 864px; top: 1814px; width: 528px; height: 112px; }
-.node-60-280 { left: 0px; top: 0px; width: 112px; height: 112px; }
-.node-60-281 { left: 0px; top: 0px; width: 112px; height: 112px; border-radius: 999px; background: var(--color-e53264); box-shadow: var(--shadow-22); }
-.node-60-282 { left: 16px; top: 16px; width: 80px; height: 80px; border-radius: 999px; background: var(--color-e53264); }
-.node-60-283 { left: 32.00000171655px; top: 31.999997901854px; width: 47.9999982834px; height: 48.0000059128px; }
-
-.node-60-284 { left: 185px; top: 0px; width: 343px; height: 112px; border-radius: 31px; }
-.node-60-285 { left: 0px; top: 0px; width: 343px; height: 112px; background: var(--color-e53264); border-radius: 31px; box-shadow: var(--shadow-23); }
-.node-60-286 { left: 0px; top: 0px; width: 324px; height: 112px; background: var(--color-e53264); border-radius: 31px; }
-.node-60-287 { left: 0px; top: 0px; width: 302px; height: 112px; background: var(--color-e53264); border-radius: 31px; }
-.node-60-288 { left: 46px; top: 38px; width: 209px; height: 36px; font-family: var(--typo-37-family); font-size: var(--typo-37-size); font-weight: var(--typo-37-weight); line-height: var(--typo-37-line-height); color: var(--typo-37-color); }
-
-/* Additional nodes below fold: keep basic positioning */
-.node-60-289 { left: 84px; top: 2193px; width: 237px; height: 50px; }
-.node-60-290 { left: 0px; top: 0px; width: 237px; height: 36px; font-family: var(--typo-37-family); font-size: var(--typo-37-size); font-weight: var(--typo-37-weight); line-height: var(--typo-37-line-height); color: var(--typo-37-color); }
-.node-60-291 { left: 0px; top: 50px; width: 213px; height: 3px; background: var(--color-ffffff); }
-.node-60-292 { left: 221px; top: 50px; width: 16px; height: 3px; background: var(--color-ffffff); }
-
-.node-60-293 { left: 76px; top: 2262px; width: 640px; height: 258px; font-size: 138px; font-weight: 900; line-height: 129px; color: var(--color-ffffff); }
-.node-60-294 { left: 84px; top: 2539px; width: 636px; height: 96px; font-family: var(--typo-38-family); font-size: var(--typo-38-size); font-weight: var(--typo-38-weight); line-height: var(--typo-38-line-height); color: var(--typo-38-color); }
-
-.node-60-295 { left: 84px; top: 2651px; width: 343px; height: 112px; border-radius: 31px; }
-.node-60-296 { left: 0px; top: 0px; width: 343px; height: 112px; background: var(--color-f9c320); border-radius: 31px; box-shadow: var(--shadow-23); }
-.node-60-297 { left: 0px; top: 0px; width: 324px; height: 112px; background: var(--color-f9c320); border-radius: 31px; }
-.node-60-298 { left: 0px; top: 0px; width: 302px; height: 112px; background: var(--color-f9c320); border-radius: 31px; }
-.node-60-299 { left: 46px; top: 38px; width: 209px; height: 36px; font-family: var(--typo-37-family); font-size: var(--typo-37-size); font-weight: var(--typo-37-weight); line-height: var(--typo-37-line-height); color: var(--typo-37-color); }
-
-/* Footer blocks omitted from detailed styling for brevity; positions remain in DOM */
