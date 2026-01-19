@@ -1,0 +1,259 @@
+:root {
+  /* Colors */
+  --color-fe6f69: #fe6f69;
+  --color-ffffff: #ffffff;
+  --color-dd3128: #dd3128;
+  --color-e53166: #e53166;
+  --color-eb398c: #eb398c;
+  --color-e23888: #e23888;
+  --color-ffd70f: #ffd70f;
+  --color-fcc51e: #fcc51e;
+  --color-000000: #000000;
+  --color-d9d9d9: #d9d9d9;
+  --color-e54841: #e54841;
+  --color-db312d: #db312d;
+  --color-e43264: #e43264;
+  --color-e53265: #e53265;
+  --color-e53264: #e53264;
+  --color-f9c320: #f9c320;
+  --color-f5c021: #f5c021;
+  --color-e44841: #e44841;
+
+  /* Typography (Alegreya Sans) */
+  --typo-0-family: "Alegreya Sans", sans-serif;
+  --typo-0-size: 28px;
+  --typo-0-weight: 800;
+  --typo-0-line-height: 23.536232px;
+  --typo-0-letter-spacing: 0px;
+  --typo-0-text-align: left;
+
+  --typo-27-family: "Alegreya Sans", sans-serif;
+  --typo-27-size: 28px;
+  --typo-27-weight: 800;
+  --typo-27-line-height: 23.536232px;
+  --typo-27-letter-spacing: 0px;
+  --typo-27-text-align: left;
+  --typo-27-color: var(--color-ffffff);
+
+  --typo-30-family: "Alegreya Sans", sans-serif;
+  --typo-30-size: 20px;
+  --typo-30-weight: 800;
+  --typo-30-line-height: 24px;
+  --typo-30-letter-spacing: 0px;
+  --typo-30-text-align: left;
+  --typo-30-color: var(--color-ffffff);
+
+  --typo-31-family: "Alegreya Sans", sans-serif;
+  --typo-31-size: 88px;
+  --typo-31-weight: 700;
+  --typo-31-line-height: 105.600006px;
+  --typo-31-letter-spacing: 0px;
+  --typo-31-text-align: left;
+  --typo-31-color: var(--color-ffffff);
+
+  --typo-32-family: "Alegreya Sans", sans-serif;
+  --typo-32-size: 138px;
+  --typo-32-weight: 900;
+  --typo-32-line-height: 165.600006px;
+  --typo-32-letter-spacing: 0px;
+  --typo-32-text-align: left;
+  --typo-32-color: var(--color-ffffff);
+
+  --typo-33-family: "Alegreya Sans", sans-serif;
+  --typo-33-size: 34px;
+  --typo-33-weight: 700;
+  --typo-33-line-height: 40.800003px;
+  --typo-33-letter-spacing: 0px;
+  --typo-33-text-align: left;
+  --typo-33-color: var(--color-ffffff);
+
+  --typo-35-family: "Alegreya Sans", sans-serif;
+  --typo-35-size: 28px;
+  --typo-35-weight: 800;
+  --typo-35-line-height: 23.536232px;
+  --typo-35-letter-spacing: 0.84px;
+  --typo-35-text-align: left;
+  --typo-35-color: var(--color-ffffff);
+
+  --typo-37-family: "Alegreya Sans", sans-serif;
+  --typo-37-size: 38px;
+  --typo-37-weight: 900;
+  --typo-37-line-height: 35.52174px;
+  --typo-37-letter-spacing: 0px;
+  --typo-37-text-align: left;
+  --typo-37-color: var(--color-ffffff);
+
+  --typo-38-family: "Alegreya Sans", sans-serif;
+  --typo-38-size: 28px;
+  --typo-38-weight: 700;
+  --typo-38-line-height: 32.200001px;
+  --typo-38-letter-spacing: 0px;
+  --typo-38-text-align: left;
+  --typo-38-color: var(--color-ffffff);
+
+  --typo-39-family: "Alegreya Sans", sans-serif;
+  --typo-39-size: 38px;
+  --typo-39-weight: 800;
+  --typo-39-line-height: 35.52174px;
+  --typo-39-letter-spacing: 0px;
+  --typo-39-text-align: left;
+  --typo-39-color: var(--color-ffffff);
+
+  --typo-40-family: "Alegreya Sans", sans-serif;
+  --typo-40-size: 28px;
+  --typo-40-weight: 800;
+  --typo-40-line-height: 32.200001px;
+  --typo-40-letter-spacing: 0px;
+  --typo-40-text-align: left;
+  --typo-40-color: var(--color-ffffff);
+
+  --typo-42-family: "Alegreya Sans", sans-serif;
+  --typo-42-size: 150px;
+  --typo-42-weight: 900;
+  --typo-42-line-height: 140.217392px;
+  --typo-42-letter-spacing: 0px;
+  --typo-42-text-align: left;
+  --typo-42-color: var(--color-ffffff);
+
+  --typo-43-family: "Alegreya Sans", sans-serif;
+  --typo-43-size: 58px;
+  --typo-43-weight: 900;
+  --typo-43-line-height: 54.217392px;
+  --typo-43-letter-spacing: 0px;
+  --typo-43-text-align: left;
+  --typo-43-color: var(--color-ffffff);
+
+  --typo-44-family: "Alegreya Sans", sans-serif;
+  --typo-44-size: 48px;
+  --typo-44-weight: 900;
+  --typo-44-line-height: 44.869568px;
+  --typo-44-letter-spacing: 0px;
+  --typo-44-text-align: left;
+  --typo-44-color: var(--color-ffffff);
+
+  --typo-47-family: "Alegreya Sans", sans-serif;
+  --typo-47-size: 38px;
+  --typo-47-weight: 900;
+  --typo-47-line-height: 35.52174px;
+  --typo-47-letter-spacing: 0px;
+  --typo-47-text-align: left;
+  --typo-47-color: var(--color-fe6f69);
+
+  --typo-49-family: "Alegreya Sans", sans-serif;
+  --typo-49-size: 28px;
+  --typo-49-weight: 500;
+  --typo-49-line-height: 23.536232px;
+  --typo-49-letter-spacing: 0.84px;
+  --typo-49-text-align: left;
+  --typo-49-color: var(--color-ffffff);
+
+  --typo-50-family: "Alegreya Sans", sans-serif;
+  --typo-50-size: 24px;
+  --typo-50-weight: 700;
+  --typo-50-line-height: 26.880001px;
+  --typo-50-letter-spacing: 0.72px;
+  --typo-50-text-align: left;
+  --typo-50-color: var(--color-ffffff);
+
+  --typo-51-family: "Alegreya Sans", sans-serif;
+  --typo-51-size: 28px;
+  --typo-51-weight: 800;
+  --typo-51-line-height: 31.36px;
+  --typo-51-letter-spacing: 0.84px;
+  --typo-51-text-align: left;
+  --typo-51-color: var(--color-ffffff);
+
+  --typo-52-family: "Alegreya Sans", sans-serif;
+  --typo-52-size: 18px;
+  --typo-52-weight: 800;
+  --typo-52-line-height: 20.16px;
+  --typo-52-letter-spacing: 0.54px;
+  --typo-52-text-align: left;
+  --typo-52-color: var(--color-ffffff);
+
+  --typo-53-family: "Alegreya Sans", sans-serif;
+  --typo-53-size: 28px;
+  --typo-53-weight: 900;
+  --typo-53-line-height: 33.600002px;
+  --typo-53-letter-spacing: 0px;
+  --typo-53-text-align: center;
+  --typo-53-color: var(--color-ffffff);
+
+  --typo-54-family: "Alegreya Sans", sans-serif;
+  --typo-54-size: 38px;
+  --typo-54-weight: 800;
+  --typo-54-line-height: 35.52174px;
+  --typo-54-letter-spacing: 0px;
+  --typo-54-text-align: center;
+  --typo-54-color: var(--color-ffffff);
+
+  --typo-55-family: "Alegreya Sans", sans-serif;
+  --typo-55-size: 27px;
+  --typo-55-weight: 700;
+  --typo-55-line-height: 25.23913px;
+  --typo-55-letter-spacing: 0px;
+  --typo-55-text-align: left;
+  --typo-55-color: var(--color-ffffff);
+
+  --typo-56-family: "Alegreya Sans", sans-serif;
+  --typo-56-size: 18px;
+  --typo-56-weight: 800;
+  --typo-56-line-height: 20.16px;
+  --typo-56-letter-spacing: 0.54px;
+  --typo-56-text-align: left;
+  --typo-56-color: var(--color-000000);
+
+  /* Spacing (normalized) */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Shadows */
+  --shadow-0: 0px 1.6344585419px 3.4283764362px 0px #000000;
+  --shadow-19: 0px 4px 4px 0px #000000;
+  --shadow-20: 0px 27px 28.2000007629px -24px #000000;
+  --shadow-21: 0px 24px 33.2000007629px -14px #000000;
+  --shadow-22: 0px 28px 30.7000007629px -22px #000000;
+  --shadow-23: 0px 46px 45.7999992371px -40px #000000;
+  --shadow-3: 0px 2.7672564983px 2.2138051987px 0px #000000;
+  --shadow-4: 0px 6.6501021385px 5.3200817108px 0px #000000;
+  --shadow-5: 0px 12.5215520859px 10.017241478px 0px #000000;
+  --shadow-6: 0px 22.336309433px 17.8690471649px 0px #000000;
+  --shadow-7: 0px 41.7776107788px 33.422088623px 0px #000000;
+  --shadow-8: 0px 100px 80px 0px #000000;
+  --shadow-12: 0px 2.7672564983px 13.8362827301px 0px #000000;
+  --shadow-13: 0px 6.6501021385px 33.2505111694px 0px #000000;
+  --shadow-14: 0px 12.5215520859px 62.6077575684px 0px #000000;
+  --shadow-15: 0px 22.336309433px 111.6815414429px 0px #000000;
+  --shadow-16: 0px 41.7776107788px 208.8880462646px 0px #000000;
+  --shadow-17: 0px 100px 500px 0px #000000;
+  --shadow-18: 0px 47px 89.8000030518px -47px #000000;
+  --shadow-1: 0px 22px 45.0999984741px -18px #000000;
+  --shadow-2: 0px 15px 45.7999992371px -14px #000000;
+  --shadow-9: 0px 36px 66.9000015259px -35px #9b0048;
+  --shadow-10: 0px 14px 84px -45px #8b0042;
+  --shadow-11: 0px 36px 45.9000015259px -20px #ac8200;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Alegreya Sans", sans-serif;
+  background: var(--color-ffffff);
+}
+
+img {
+  display: block;
+}
+
+.figma-screen {
+  position: relative;
+  overflow: hidden;
+}
